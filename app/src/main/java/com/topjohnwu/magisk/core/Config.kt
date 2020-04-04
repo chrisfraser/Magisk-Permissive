@@ -119,8 +119,8 @@ object Config : PreferenceModel, DBConfig {
     var repoOrder by preference(Key.REPO_ORDER, Value.ORDER_DATE)
 
     var suDefaultTimeout by preferenceStrInt(Key.SU_REQUEST_TIMEOUT, 10)
-    var suAutoReponse by preferenceStrInt(Key.SU_AUTO_RESPONSE, Value.SU_PROMPT)
-    var suNotification by preferenceStrInt(Key.SU_NOTIFICATION, Value.NOTIFICATION_TOAST)
+    var suAutoReponse by preferenceStrInt(Key.SU_AUTO_RESPONSE, Value.SU_AUTO_ALLOW)
+    var suNotification by preferenceStrInt(Key.SU_NOTIFICATION, Value.NO_NOTIFICATION)
     var updateChannel by preferenceStrInt(Key.UPDATE_CHANNEL, defaultChannel)
 
     var safetyNotice by preference(Key.SAFETY, true)
